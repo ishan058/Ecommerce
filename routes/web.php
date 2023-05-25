@@ -6,6 +6,8 @@ use App\Http\Controllers\HomeController;
 
 use App\Http\Controllers\AdminController;
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,4 +35,7 @@ Route::middleware([
     route::get('/view_catagory',[AdminController::class,'view_catagory']);
 
     route::post('/add_catagory',[AdminController::class,'add_catagory']);
+
+    route::get('/delete_catagory',[AdminController::class,'delete_catagory']);
+
 });

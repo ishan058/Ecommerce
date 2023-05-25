@@ -22,6 +22,14 @@
           {
             color:black;
           }
+         .center
+            {
+              margin:auto;
+              width:50%;
+              text -align:center;
+              margin-top:30px;
+              border:3px solid white;
+          }
       </style>
   
 </head>
@@ -60,6 +68,23 @@
           </form>
           </div>
 
+          <table class="center">
+            <tr>
+              <td>Catagory Name</td>
+              <td>Action</td>
+            </tr>
+
+            @foreach($data as $data)
+            <tr>
+
+              <td>{{$data->catagory_name}}</td>
+
+              <td>
+                <a class="btn btn-danger" href="{{url('delete_catagory',$data->id)}}">Delete</a>
+            </td>
+            </tr>
+            @endforeach
+        </table>
               </div>
 
             </div>

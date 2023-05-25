@@ -27,7 +27,7 @@ class AdminController extends Controller
     
     }
 
-    public function delete_catagoty($id)
+    public function delete_catagory($id)
     {
     $data=catagory::find($id);
     $data->delete();

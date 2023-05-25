@@ -80,7 +80,7 @@
               <td>{{$data->catagory_name}}</td>
 
               <td>
-                <a class="btn btn-danger" href="{{url('delete_catagory',$data->id)}}">Delete</a>
+                <a onclick="return confirm('Are You Sure To Delete')" class="btn btn-danger" href="{{url('delete_catagory',$data->id)}}">Delete</a>
             </td>
             </tr>
             @endforeach

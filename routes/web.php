@@ -39,4 +39,19 @@ Route::middleware([
 
     route::get('/delete_catagory/{id}',[AdminController::class,'delete_catagory']);
 
+
+
+
+
+
+
+
+
+
+
+
+
+//route::get('/product_details/{id}',[HomeController::class,'product_details'])
+
+//route::post('/add_cart/{id}',[HomeController::class,'add_cart'])
 });
